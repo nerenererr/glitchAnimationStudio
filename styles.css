@@ -46,6 +46,22 @@ footer {
     max-width: 280px;
 }
 
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #666;
+}
+
 .footer-column h3 {
     font-size: 16px;
     font-weight: 600;
