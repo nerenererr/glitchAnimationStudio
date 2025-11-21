@@ -21,6 +21,8 @@ body {
 
 .gallery-item {
     background: #cccccc;
+    background-size: cover;
+    background-position: center;
     height: 300px;
     display: flex;
     align-items: center;
@@ -28,6 +30,8 @@ body {
 }
 
 .gallery-item h3 {
-    color: #333;
+    color: white;
     font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
 }
