@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f0f0f0;
+    background: #000000;
     padding: 50px 0;
 }
 
@@ -32,12 +32,24 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     position: relative;
-    cursor: pointer;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     transition: transform 0.3s;
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.gallery-item:first-child {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    margin-left: 0;
+}
+
+.gallery-item:last-child {
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .gallery-item:hover {
     transform: scale(1.05);
+    z-index: 10;
 }
 
 .gallery-overlay {
@@ -55,4 +67,15 @@ h1, h2, h3 {
 .gallery-overlay h3 {
     font-size: 24px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item {
+        margin-left: 0;
+        height: 300px;
+    }
 }
