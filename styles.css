@@ -27,7 +27,7 @@ footer {
 
 .footer-main {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     gap: 60px;
     margin-bottom: 60px;
 }
@@ -69,6 +69,17 @@ footer {
 }
 
 .footer-column ul li a:hover {
+    color: #fff;
+}
+
+.contact-info p {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.contact-info p:hover {
     color: #fff;
 }
 
