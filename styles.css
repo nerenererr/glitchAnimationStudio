@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     padding: 50px 0;
 }
 
+/* GALERÍA CON HOVER */
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -27,11 +29,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
-.gallery-item h3 {
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    background: rgba(205, 114, 152, 0.85);
     color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h3 {
     font-size: 24px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
+    text-align: center;
 }
