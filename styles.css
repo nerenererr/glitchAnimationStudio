@@ -1,10 +1,10 @@
-/*Reset global de los estilos*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/*Fuente para el header*/
+
 @font-face {
   font-family: 'Orbitron';
   src: url('fonts/Orbitron/static/Orbitron-Regular.ttf') format('truetype');
@@ -19,13 +19,17 @@
   font-style: normal;
 }
 
-body {
-  font-family: 'Orbitron', sans-serif;
-  background-color: #111; /* para ver la navbar blanca sobre fondo oscuro */
+@font-face {
+    font-family: 'Zen Dots';
+    src: url('fonts/Zen_Dots/ZenDots-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
-/*Barra de navegación*/
-/*Todo lo que se ponga aquí afecta al header completo, no a sus elementos internos.*/
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #111; 
+}
 
 .navbar {
   width: 100%;
@@ -36,12 +40,10 @@ body {
   background: transparent;
 }
 
-/*Sirve para controlar el contenido interno sin tocar el ancho de la barra. Contiene el logo y los links (Secciones)*/
-
 .navbar .container {
   width: 100%;
   display: flex;
-  justify-content: space-between; /* separa logo y links */
+  justify-content: space-between;
   align-items: center;
   padding: 16px 54px; 
 }
@@ -58,13 +60,9 @@ body {
   gap: 1rem; 
 }
 
-/*Esto es cada cada <li> dentro de la lista de navegación y el position relative es para que los elementos hijos con position absolute (como el .bullet) se posicionen en relación a este <li> y no a todo el documento.*/
-
 .nav-item {
   position: relative;
 }
-
-/*Esto es el link dentro de cada nav-item. La "a" es de "anchore" o mejor, de <a>*/
 
 .nav-item a {
   text-decoration: none;
@@ -78,14 +76,10 @@ body {
   padding-left: 24px; 
 }
 
-/*Esto esto son los estilos resaltados de los links que estén activos, para que se pongan en bold y con el color primario*/
-
 .nav-item.active a {
   color: #CD7298;
   font-weight: 700;
 }
-
-/*La bolita que aparece junto al link activo*/
 
 .nav-item.active .bullet {
   position: absolute;
@@ -98,4 +92,36 @@ body {
   background-color: #CD7298;
 }
 
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    color: white;
+    font-family: 'Zen Dots', cursive;
+    font-size: 128px;
+    line-height: 120px;
+    letter-spacing: -1px;
+}
+
+.hero-content span {
+    display: block;
+}
