@@ -82,14 +82,19 @@ body {
 }
 
 .nav-item.active .bullet {
-  position: absolute;
-  left: 0;
+position: absolute;
+  left: 0;               
   top: 50%;
   transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
+  width: 16px;                
+  height: 20px;               
   background-color: #CD7298;
+  animation: blink-rect 2s steps(1) infinite; /* parpadeo */
+}
+
+@keyframes blink-rect {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
 }
 
 .hero {
@@ -113,15 +118,71 @@ body {
 .hero-content {
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 54px;
     z-index: 2;
     color: white;
     font-family: 'Zen Dots', cursive;
     font-size: 128px;
     line-height: 120px;
     letter-spacing: -1px;
+    
 }
 
 .hero-content span {
     display: block;
+}
+
+.hud {
+  position: absolute;
+  bottom: 32px;
+  right: 54px;
+  text-align: right;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #00ffea;
+  opacity: 0.85;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 2px #00fff2,
+    0 0 5px #00fff2,
+    0 0 10px #00fff2,
+    0 0 20px #00ffea,
+    0 0 30px #00ffea;
+  z-index: 10;
+}
+
+.project-hud {
+  position: relative;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  color: #00ffea;
+  text-shadow:
+    0 0 2px #00fff2,
+    0 0 5px #00fff2,
+    0 0 10px #00fff2,
+    0 0 20px #00ffea,
+    0 0 30px #00ffea;
+  margin-bottom: 6px; 
+}
+
+.project-hud::before {
+  content: "PROJECT: COWBOY BEBOP"; 
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  animation: hud-cycle 82.5s linear infinite, hud-glitch 0.5s infinite;
+}
+
+@keyframes hud-cycle {
+  0% { content: "PROJECT: COWBOY BEBOP"; }
+  25% { content: "PROJECT: AKIRA"; }
+  25.81% { content: "PROJECT: COWBOY BEBOP"; }
+  60% { content: "PROJECT: COWBOY BEBOP"; } /* repetición de intervalos */
+  80% { content: "PROJECT: NEON GENESIS EVANGELION"; }
+  94.91% { content: "PROJECT: COWBOY BEBOP"; }
+  100% { content: "PROJECT: COWBOY BEBOP"; }
 }
