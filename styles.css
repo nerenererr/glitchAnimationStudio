@@ -76,6 +76,15 @@ body {
   padding-left: 24px; 
 }
 
+.nav-item:not(.active) a:hover {
+  color: #CD7298;
+  text-shadow:
+    0 0 5px #CD7298,
+    0 0 10px #CD7298,
+    0 0 20px #FF90C0;
+  transition: all 0.1s ease;
+}
+
 .nav-item.active a {
   color: #CD7298;
   font-weight: 700;
@@ -89,7 +98,7 @@ position: absolute;
   width: 16px;                
   height: 20px;               
   background-color: #CD7298;
-  animation: blink-rect 2s steps(1) infinite; /* parpadeo */
+  animation: blink-rect 2s steps(1) infinite;
 }
 
 @keyframes blink-rect {
