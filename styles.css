@@ -174,15 +174,19 @@ position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  animation: hud-cycle 82.5s linear infinite, hud-glitch 0.5s infinite;
+  animation: hud-cycle 82.566666s linear infinite;
 }
 
 @keyframes hud-cycle {
   0% { content: "PROJECT: COWBOY BEBOP"; }
-  25% { content: "PROJECT: AKIRA"; }
-  25.81% { content: "PROJECT: COWBOY BEBOP"; }
-  60% { content: "PROJECT: COWBOY BEBOP"; } /* repetición de intervalos */
-  80% { content: "PROJECT: NEON GENESIS EVANGELION"; }
-  94.91% { content: "PROJECT: COWBOY BEBOP"; }
-  100% { content: "PROJECT: COWBOY BEBOP"; }
+  6.06% { content: "PROJECT: COWBOY BEBOP"; }
+  23.38% { content: "PROJECT: AKIRA"; }
+  28.23% { content: "PROJECT: COWBOY BEBOP"; }
+  37.68% { content: "PROJECT: COWBOY BEBOP"; }
+  38.17% { content: "PROJECT: COWBOY BEBOP"; }
+  48.71% { content: "PROJECT: COWBOY BEBOP"; }
+  60.82% { content: "PROJECT: COWBOY BEBOP"; }
+  64.81% { content: "PROJECT: NEON GENESIS EVANGELION"; }
+  91.7% { content: "PROJECT: NEON GENESIS EVANGELION"; } 
+  100% { content: "PROJECT: COWBOY BEBOP"; } 
 }
