@@ -38,12 +38,12 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
-.gallery-item:first-child {
+.gallery-item[for="modal-1"] {
     clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
     margin-left: 0;
 }
 
-.gallery-item:last-child {
+.gallery-item[for="modal-4"] {
     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -58,6 +58,7 @@ h1, h2, h3 {
     padding: 20px;
     opacity: 0;
     transition: opacity 0.3s;
+    pointer-events: none;
 }
 
 .gallery-item:hover .gallery-overlay {
@@ -69,6 +70,82 @@ h1, h2, h3 {
     text-align: center;
 }
 
+.modal-toggle {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.modal-toggle:checked + label + .modal {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background-color: #D9D9D9;
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+.modal-image-container {
+    background-color: #6B6B6B;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.modal-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-text h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.modal-text p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -77,5 +154,6 @@ h1, h2, h3 {
     .gallery-item {
         margin-left: 0;
         height: 300px;
+        clip-path: none !important;
     }
 }
