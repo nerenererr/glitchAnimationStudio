@@ -8,3 +8,25 @@ body {
   background-color: #ffffff;
   font-family: 'Orbitron', sans-serif;
 }
+
+/* Sección ocupa todo el ancho de la ventana */
+.section-2 {
+  position: relative;
+  width: 100vw;      
+  height: 776px;
+  overflow: hidden;
+}
+
+/* Fondo único full-width */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://res.cloudinary.com/da9tytxsu/image/upload/v1764098466/bgSection2_zvthvc.png');
+  background-size: cover;        
+  background-position: center;  
+  z-index: -1;       
+}
+
