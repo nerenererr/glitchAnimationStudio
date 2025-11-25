@@ -9,7 +9,6 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
-/* Sección ocupa todo el ancho de la ventana */
 .section-2 {
   position: relative;
   width: 100vw;      
@@ -17,7 +16,6 @@ body {
   overflow: hidden;
 }
 
-/* Fondo único full-width */
 .background {
   position: absolute;
   top: 0;
@@ -43,3 +41,10 @@ body {
   text-align: center;
 }
 
+.overlay-text span {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 162px;
+  letter-spacing: -1px;
+  color: rgba(255, 255, 255, 1);
+}
