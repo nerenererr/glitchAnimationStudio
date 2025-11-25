@@ -1,15 +1,203 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('fonts/Orbitron/static/Orbitron-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('fonts/Orbitron/static/Orbitron-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Zen Dots';
+    src: url('fonts/Zen_Dots/ZenDots-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #000000;
-    padding: 0;
-    overflow-x: hidden;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #111; 
 }
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: transparent;
+}
+
+.navbar .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 54px; 
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px; 
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item a {
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: -0.24px;
+  line-height: 20.8px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  padding-left: 24px; 
+}
+
+.nav-item:not(.active) a:hover {
+  color: #CD7298;
+  text-shadow:
+    0 0 5px #CD7298,
+    0 0 10px #CD7298,
+    0 0 20px #FF90C0;
+  transition: all 0.1s ease;
+}
+
+.nav-item.active a {
+  color: #CD7298;
+  font-weight: 700;
+}
+
+.nav-item.active .bullet {
+  position: absolute;
+  left: 0;               
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;                
+  height: 20px;               
+  background-color: #CD7298;
+  animation: blink-rect 2s steps(1) infinite;
+}
+
+@keyframes blink-rect {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 20px;
+    left: 54px;
+    z-index: 2;
+    color: white;
+    font-family: 'Zen Dots', cursive;
+    font-size: 128px;
+    line-height: 120px;
+    letter-spacing: -1px;
+}
+
+.hero-content span {
+    display: block;
+}
+
+.hud {
+  position: absolute;
+  bottom: 32px;
+  right: 54px;
+  text-align: right;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 13.6px;
+  line-height: 22.4px;
+  color: #00ffea;
+  opacity: 0.85;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 2px #00fff2,
+    0 0 5px #00fff2,
+    0 0 10px #00fff2,
+    0 0 20px #00ffea,
+    0 0 30px #00ffea;
+  z-index: 10;
+}
+
+.project-hud {
+  position: relative;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 13.6px;
+  line-height: 22.4px;
+  letter-spacing: 1px;
+  color: #00ffea;
+  text-shadow:
+    0 0 2px #00fff2,
+    0 0 5px #00fff2,
+    0 0 10px #00fff2,
+    0 0 20px #00ffea,
+    0 0 30px #00ffea;
+  margin-bottom: 6px; 
+}
+
+.project-hud::before {
+  content: "PROJECT: COWBOY BEBOP"; 
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  animation: hud-cycle 82.566666s linear infinite;
+}
+
+@keyframes hud-cycle {
+  0% { content: "PROJECT: COWBOY BEBOP"; }
+  6.06% { content: "PROJECT: COWBOY BEBOP"; }
+  23.38% { content: "PROJECT: AKIRA"; }
+  28.23% { content: "PROJECT: COWBOY BEBOP"; }
+  37.68% { content: "PROJECT: COWBOY BEBOP"; }
+  38.17% { content: "PROJECT: COWBOY BEBOP"; }
+  48.71% { content: "PROJECT: COWBOY BEBOP"; }
+  60.82% { content: "PROJECT: COWBOY BEBOP"; }
+  64.81% { content: "PROJECT: NEON GENESIS EVANGELION"; }
+  91.7% { content: "PROJECT: NEON GENESIS EVANGELION"; } 
+  100% { content: "PROJECT: COWBOY BEBOP"; } 
+}
+
 
 h1, h2, h3 {
     font-family: 'Orbitron', sans-serif;
@@ -170,3 +358,7 @@ h1, h2, h3 {
         clip-path: none;
     }
 }
+
+    
+
+    
