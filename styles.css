@@ -23,7 +23,7 @@ h1, h2, h3 {
 }
 
 .gallery-item {
-    width: 35%;
+    width: 35%; 
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -36,11 +36,18 @@ h1, h2, h3 {
 }
 
 .gallery-item[for="modal-1"] {
+    width: 30%; 
     clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
     margin-left: 0;
 }
 
+.gallery-item[for="modal-2"],
+.gallery-item[for="modal-3"] {
+    width: 40%;
+}
+
 .gallery-item[for="modal-4"] {
+    width: 30%;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -157,9 +164,9 @@ h1, h2, h3 {
         flex-direction: column;
     }
     .gallery-item {
-        width: 100%;
+        width: 100%; 
         height: 25%;
         margin-left: 0;
-        clip-path: none !important;
+        clip-path: none;
     }
 }
