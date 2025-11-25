@@ -30,3 +30,16 @@ body {
   z-index: -1;       
 }
 
+.overlay-text {
+  position: absolute;
+  top: 464px;
+  left: 0;
+  width: 1090px;
+  height: 140px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
