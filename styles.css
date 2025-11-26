@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -120,6 +124,38 @@ footer {
     overflow: hidden;
 }
 
+.illustration-left img,
+.illustration-right img,
+.center-content img {
+    filter: none !important;
+    mix-blend-mode: multiply !important;
+}
+
+.illustration-left img {
+    position: absolute;
+    left: 0;
+    width: 540px;
+    height: 523px;
+    z-index: 4;
+}
+
+.illustration-right img {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    width: 602px;
+}
+
+.center-content img {
+    position: absolute;
+    bottom: -70px;
+    left: 42%;
+    transform: translateX(-55%);
+    width: 667px;
+    height: 592px;
+    z-index: 5;
+}
+
 .tech-lines {
     position: absolute;
     inset: 0;
@@ -130,5 +166,6 @@ footer {
 .tech-lines .line:nth-child(1) { left: 15%; }
 .tech-lines .line:nth-child(2) { left: 40%; }
 .tech-lines .line:nth-child(3) { left: 70%; }
+
 
 
