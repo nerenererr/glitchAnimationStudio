@@ -5,10 +5,11 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background-color: #000;
     color: #fff;
     min-height: 100vh;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -108,5 +109,26 @@ footer {
 .footer-bottom p {
     color: #666;
     font-size: 13px;
-    font-family: 'Courier New', monospace;
 }
+
+
+.our-work-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(130deg, #4d002f, #b30056);
+    overflow: hidden;
+}
+
+.tech-lines {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.tech-lines .line:nth-child(1) { left: 15%; }
+.tech-lines .line:nth-child(2) { left: 40%; }
+.tech-lines .line:nth-child(3) { left: 70%; }
+
+
