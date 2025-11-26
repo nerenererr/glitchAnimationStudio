@@ -8,90 +8,100 @@
 </head>
 <body>
     <section id="sobre-nosotros" class="about-section">
-
-  <div class="team-container">
-    <div class="team-cards">
-      <div class="team-card" data-member="1">
-        <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763960881/image_17_c4m0lg.png" alt="Miembro 1">
-        <div class="popup">
-        <div class="popup-image">
-          <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763961951/Captura_de_pantalla_2025-11-24_062528_w2akiv.png" alt="Alfonso">
+      
+      <input type="radio" name="team-member" id="member-1" class="team-checkbox">
+      <input type="radio" name="team-member" id="member-2" class="team-checkbox">
+      <input type="radio" name="team-member" id="member-3" class="team-checkbox">
+      <input type="radio" name="team-member" id="member-4" class="team-checkbox">
+      
+      <div class="team-container">
+        <div class="team-cards">
+          
+          <label for="member-1" class="team-card" data-member="1">
+            <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763960881/image_17_c4m0lg.png" alt="Miembro 1">
+          </label>
+          
+          <label for="member-2" class="team-card" data-member="2">
+            <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763960882/image_19_n4zt1j.png" alt="Miembro 2">
+          </label>
+          
+          <label for="member-3" class="team-card" data-member="3">
+            <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763960882/image_20_fo3tdd.png" alt="Miembro 3">
+          </label>
+          
+          <label for="member-4" class="team-card" data-member="4">
+            <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763960882/image_18_jnng5x.png" alt="Miembro 4">
+          </label>
+          
         </div>
-        <div class="popup-content">
-          <h2>Alfonso</h2>
-          <p class="detail-role">BACKEND DEVELOPER</p>
-          <p class="detail-bio">Desarrollador backend enfocado en crear APIs robustas y escalables.</p>
-          <div class="detail-skills">
-            <span class="skill">Python</span>
-            <span class="skill">Django</span>
-            <span class="skill">PostgreSQL</span>
+        
+        <div class="popup-container">
+          <div class="popup" data-member="1">
+            <div class="popup-image">
+              <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763961951/Captura_de_pantalla_2025-11-24_062528_w2akiv.png" alt="Alfonso">
+            </div>
+            <div class="popup-content">
+              <h2>Dani</h2>
+              <p class="detail-role">BACKEND DEVELOPER</p>
+              <p class="detail-bio">Desarrollador backend enfocado en crear APIs robustas y escalables.</p>
+              <div class="detail-skills">
+                <span class="skill">Python</span>
+                <span class="skill">Django</span>
+                <span class="skill">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="popup" data-member="2">
+            <div class="popup-image">
+              <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763961951/Captura_de_pantalla_2025-11-24_062528_w2akiv.png" alt="Nerea">
+            </div>
+            <div class="popup-content">
+              <h2>Nerea</h2>
+              <p class="detail-role">FRONTEND DEVELOPER</p>
+              <p class="detail-bio">Especialista en crear interfaces de usuario modernas y responsivas.</p>
+              <div class="detail-skills">
+                <span class="skill">React</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">CSS</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="popup" data-member="3">
+            <div class="popup-image">
+              <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763961951/Captura_de_pantalla_2025-11-24_062528_w2akiv.png" alt="Carlos">
+            </div>
+            <div class="popup-content">
+              <h2>Carlos</h2>
+              <p class="detail-role">UI/UX DESIGNER</p>
+              <p class="detail-bio">Diseñador enfocado en crear experiencias de usuario excepcionales.</p>
+              <div class="detail-skills">
+                <span class="skill">Figma</span>
+                <span class="skill">Adobe XD</span>
+                <span class="skill">Prototyping</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="popup" data-member="4">
+            <div class="popup-image">
+              <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763961951/Captura_de_pantalla_2025-11-24_062528_w2akiv.png" alt="Laura">
+            </div>
+            <div class="popup-content">
+              <h2>Alfonso</h2>
+              <p class="detail-role">PROJECT MANAGER</p>
+              <p class="detail-bio">Gestor de proyectos con experiencia en metodologías ágiles.</p>
+              <div class="detail-skills">
+                <span class="skill">Scrum</span>
+                <span class="skill">Jira</span>
+                <span class="skill">Leadership</span>
+              </div>
+            </div>
           </div>
         </div>
+        
       </div>
-      
-      </div>
-      
-      <div class="team-card" data-member="2">
-        <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763960882/image_19_n4zt1j.png" alt="Miembro 2">
-        <div class="popup">
-        <div class="popup-image">
-          <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763961951/Captura_de_pantalla_2025-11-24_062528_w2akiv.png" alt="María">
-        </div>
-        <div class="popup-content">
-          <h2>Nerea</h2>
-          <p class="detail-role">FRONTEND DEVELOPER</p>
-          <p class="detail-bio">Especialista en crear interfaces de usuario modernas y responsivas.</p>
-          <div class="detail-skills">
-            <span class="skill">React</span>
-            <span class="skill">TypeScript</span>
-            <span class="skill">CSS</span>
-          </div>
-        </div>
-      </div>
-      </div>
-      
-      <div class="team-card" data-member="3">
-        <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763960882/image_20_fo3tdd.png" alt="Miembro 3">
-        <div class="popup">
-        <div class="popup-image">
-          <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763961951/Captura_de_pantalla_2025-11-24_062528_w2akiv.png" alt="Carlos">
-        </div>
-        <div class="popup-content">
-          <h2>Carlos</h2>
-          <p class="detail-role">UI/UX DESIGNER</p>
-          <p class="detail-bio">Diseñador enfocado en crear experiencias de usuario excepcionales.</p>
-          <div class="detail-skills">
-            <span class="skill">Figma</span>
-            <span class="skill">Adobe XD</span>
-            <span class="skill">Prototyping</span>
-          </div>
-        </div>
-      </div>
-      </div>
-      
-      <div class="team-card" data-member="4">
-        <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763960882/image_18_jnng5x.png" alt="Miembro 4">
-        <div class="popup">
-        <div class="popup-image">
-          <img src="https://res.cloudinary.com/dbtuho5h0/image/upload/v1763961951/Captura_de_pantalla_2025-11-24_062528_w2akiv.png" alt="Laura">
-        </div>
-        <div class="popup-content">
-          <h2>Alfonso</h2>
-          <p class="detail-role">PROJECT MANAGER</p>
-          <p class="detail-bio">Gestora de proyectos con experiencia en metodologías ágiles.</p>
-          <div class="detail-skills">
-            <span class="skill">Scrum</span>
-            <span class="skill">Jira</span>
-            <span class="skill">Leadership</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 </body>
 </html>
