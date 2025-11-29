@@ -126,7 +126,7 @@ footer {
 .stripe {
     position: absolute;
     bottom: 150px;
-    right: 0; /* empieza desde el borde derecho */
+    right: 0; 
     width: 1090px;
     height: 140px;
     background: rgba(0, 0, 0, 0.5);
