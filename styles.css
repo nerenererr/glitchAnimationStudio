@@ -26,6 +26,7 @@
 }
 
 body {
+  background-color: #ffffff;
   font-family: 'Orbitron', sans-serif;
   background-color: #000;
   color: #fff;
@@ -109,19 +110,8 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 
-.video-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
 
 .hero-content {
   position: absolute;
@@ -183,6 +173,38 @@ body {
   64.81% { content: "PROJECT: NEON GENESIS EVANGELION"; }
   91.7% { content: "PROJECT: NEON GENESIS EVANGELION"; }
   100% { content: "PROJECT: COWBOY BEBOP"; }
+}
+
+.our-work-section {
+  position: relative;
+  width: 100%;
+  height: 640px;
+  background: url('https://res.cloudinary.com/da9tytxsu/image/upload/v1764440400/titleSection_5_nzfuzn.png') no-repeat center top;
+  background-size: cover;
+}
+
+.stripe {
+  position: absolute;
+  bottom: 150px;
+  right: 0;
+  width: 1090px;
+  height: 140px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 60px;
+  z-index: 2;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 96px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: right;
 }
 
 h1, h2, h3 {
@@ -341,6 +363,46 @@ h1, h2, h3 {
     margin-left: 0;
     clip-path: none;
   }
+}
+
+.section-2 {
+  position: relative;
+  width: 100vw;      
+  height: 776px;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://res.cloudinary.com/da9tytxsu/image/upload/v1764098466/bgSection2_zvthvc.png');
+  background-size: cover;        
+  background-position: center;  
+  z-index: -1;       
+}
+
+.overlay-text {
+  position: absolute;
+  top: 464px;
+  left: 0;
+  width: 1090px;
+  height: 140px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay-text span {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 162px;
+  letter-spacing: -1px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .about-section {
@@ -600,34 +662,3 @@ footer {
 
 .footer-bottom p { color: #666; font-size: 13px; }
 
-.our-work-section {
-  position: relative;
-  width: 100%;
-  height: 640px;
-  background: url('https://res.cloudinary.com/da9tytxsu/image/upload/v1764440400/titleSection_5_nzfuzn.png') no-repeat center top;
-  background-size: cover;
-}
-
-.stripe {
-  position: absolute;
-  bottom: 150px;
-  right: 0;
-  width: 1090px;
-  height: 140px;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 60px;
-  z-index: 2;
-}
-
-.title {
-  color: #b30056;
-  font-size: 96px;
-  font-weight: 900;
-  letter-spacing: 4px;
-  margin: 0;
-  text-transform: uppercase;
-  text-align: right;
-}
