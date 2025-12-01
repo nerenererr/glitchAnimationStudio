@@ -1,3 +1,5 @@
+<img width="115" alt="captureMobile" src="https://res.cloudinary.com/da9tytxsu/image/upload/v1763990879/Vector_tg2eis.svg">
+
 # GLITCH ANIMATION STUDIO 
 
 Proyecto de desarrollo web - DAW
@@ -14,8 +16,8 @@ In our case, we chose to be the members of an animation studio dedicated especia
 
 ## Members
 
-- Nerea Ros Ocaña
-- Alfonso José de Terry Pérez
+- Nerea Ros Ocaña [GitHub](https://github.com/nerenererr)
+- Alfonso José de Terry Pérez [GitHub] (https://github.com/nerenererr) 
 - Carlos Parrilla Moreno
 - Daniel Pavón Tellez
 
