@@ -17,9 +17,9 @@ In our case, we chose to be the members of an animation studio dedicated especia
 ## Members
 
 - Nerea Ros Ocaña [GitHub](https://github.com/nerenererr)
-- Alfonso José de Terry Pérez [GitHub] (https://github.com/nerenererr) 
-- Carlos Parrilla Moreno
-- Daniel Pavón Tellez
+- Alfonso José de Terry Pérez [GitHub](https://github.com/deterry69) 
+- Carlos Parrilla Moreno [GitHub](https://github.com/cparmor350-source)
+- Daniel Pavón Tellez [GitHub](https://github.com/Daaniel-Sans)
 
 ## Technologies
 - HTML5
