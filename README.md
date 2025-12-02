@@ -43,6 +43,8 @@ In our case, we chose to be the members of an animation studio dedicated especia
 
 <img width="1440" alt="captureWeb" src="https://res.cloudinary.com/da9tytxsu/image/upload/v1764596456/Captura_de_pantalla_2025-12-01_144029_qjds3t.png">
 
+<img width="1440" alt="captureWeb" src="https://res.cloudinary.com/da9tytxsu/image/upload/v1764677949/Captura_de_pantalla_2025-12-02_131728_ntb0nz.png">
+
 ## Stacks
 
 For this project, we used HTML5 and CSS3 to build the website, Git for version control, Cloudinary to upload assets, Figma for design and prototyping, Trello to assign and manage team tasks, and Canva to edit the Hero Section video.
