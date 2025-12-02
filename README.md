@@ -42,3 +42,23 @@ In our case, we chose to be the members of an animation studio dedicated especia
 <img width="1440" alt="captureWeb" src="https://res.cloudinary.com/da9tytxsu/image/upload/v1764595130/Captura_de_pantalla_2025-12-01_141758_xqcvdw.png">
 
 <img width="1440" alt="captureWeb" src="https://res.cloudinary.com/da9tytxsu/image/upload/v1764596456/Captura_de_pantalla_2025-12-01_144029_qjds3t.png">
+
+## Stacks
+
+For this project, we used HTML5 and CSS3 to build the website, Git for version control, Cloudinary to upload assets, Figma for design and prototyping, Trello to assign and manage team tasks, and Canva to edit the Hero Section video.
+
+## Methodology
+
+We worked following the principles of the Agile methodology through the framework called Scrum. We also based our design process on Atomic Design.
+
+## Next Steps
+
+- Create an introductory animation for the website
+
+- Develop the rest of the website pages beyond the homepage
+
+- Add more functionalities
+
+- Prepare for the transition to development in JavaScript
+
+- Improve the aesthetic consistency and technical robustness of the website
